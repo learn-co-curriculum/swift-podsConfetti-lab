@@ -83,7 +83,7 @@ override func viewDidLoad() {
   * *Hint*: Does the pod's [documentation](https://cocoapods.org/pods/SAConfettiView) mention anything about changing the value of the intensity? Does your slider have a value property you could use to get the current value?
   * *Hint*: If the slider is moved while the confetti is falling, will the new intensity value be reflected? What functions of `SAConfettiView` might help with this?
 
- ### 6. Define your segmented control IBAction function
+### 6. Define your segmented control IBAction function
 
   * This function should change the type of the confetti that falls.
   * *Hint*: Does the pod's documention mention anything about changing the type of confetti?
