@@ -49,8 +49,8 @@ end
 2. Create IBOutlets (Control+Drag) in your view controller class for your button and your slider.
 3. Create IBActions (Control+Drag) in your view controller class for your button, your slider, and your segmented control. 
  ![IBAction Settings](https://s3.amazonaws.com/learn-verified/raining-confetti-lab-actions.png)
-  * Update `AnyObject` to the corresponding class name.
- ``` swift
+  * Update the sender argument `AnyObject` to the corresponding class name (e.g., For your button, `AnyObject` would change to `UIButton`).
+ ```swift
     @IBAction func confettiButtonTouched(sender: UIButton) {
     }
     
@@ -61,14 +61,16 @@ end
     }
  ```
 4. Add the following block of code to your `viewDidLoad()` to make your button round with a border. Don't forget to change the property name to match the outlet you created.
-  ``` swift
+```swift
+override func viewDidLoad() {
     // Set up button properties
     let appleBlueColor = UIColor.init(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
     self.yourButton.backgroundColor = appleBlueColor.colorWithAlphaComponent(0.1)
     self.yourButton.layer.cornerRadius = self.yourButton.frame.size.width / 2
     self.yourButton.layer.borderWidth = 1
     self.yourButton.layer.borderColor = appleBlueColor.CGColor
-  ```
+ }
+ ```
 
 ### 4. Define your button IBAction function
 
