@@ -39,7 +39,7 @@ end
 3. Build and run `⌘+R` the project to see what it looks like so far. You'll notice some user interface controls. More on those in a moment.
 4. Add a property to your view controller class of type `SAConfettiView` called `confettiView`.
 5. Assign a value to your property in the `viewDidLoad()` function of your view controller.
-  * Read the pod's [documentation](https://cocoapods.org/pods/SAConfettiView) to see how you can create a SAConfettiView and assign it to your property.
+  * Read the pod's [documentation](https://cocoapods.org/pods/SAConfettiView) to see how you can programmatically create a SAConfettiView and assign it to your property.
 6. Add the confetti view as a subview of the view controller's view
   * *Hint*: Usually you would just use `addSubview(_:)` but your confetti view needs to be below the user interface controls in order for the user to interact with them. Is there another view hierarchy function that uses the index of the subview property array? Could you use that function to add the confetti view as the first object in the array?
 
