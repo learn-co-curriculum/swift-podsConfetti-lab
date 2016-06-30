@@ -39,7 +39,7 @@ end
 3. Build and run `⌘+R` the project to see what it looks like so far. You'll notice some user interface controls. More on those in a moment.
 4. Add a property to your view controller class of type `SAConfettiView` called `confettiView`.
 5. Assign a value to your property in the `viewDidLoad()` function of your view controller.
-  * Read the pod's documentation to see how you can create a SAConfettiView and assign it to your property.
+  * Read the pod's [documentation](https://cocoapods.org/pods/SAConfettiView) to see how you can create a SAConfettiView and assign it to your property.
 6. Add the confetti view as a subview of the view controller's view
   * *Hint*: Usually you would just use `addSubview(_:)` but your confetti view needs to be below the user interface controls in order for the user to interact with them. Is there another view hierarchy function that uses the index of the subview property array? Could you use that function to add the confetti view as the first object in the array?
 
@@ -75,12 +75,12 @@ override func viewDidLoad() {
 ### 4. Define your button IBAction function
 
   * This function should start and stop the confetti using the properties available for the `SAConfettiView`.
-  * *Hint*: Does the pod's documentation mention anything about starting and stopping the confetti, as well as checking a view's status? Don't be afraid to run often and see if it's working.
+  * *Hint*: Does the pod's [documentation](https://cocoapods.org/pods/SAConfettiView) mention anything about starting and stopping the confetti, as well as checking a view's status? Don't be afraid to run often and see if it's working.
 
 ### 5. Define your slider IBAction function
 
   * This function should change the intensity of the confetti effect. 
-  * *Hint*: Does the pod's documentation mention anything about changing the value of the intensity? Does your slider have a value property you could use to get the current value?
+  * *Hint*: Does the pod's [documentation](https://cocoapods.org/pods/SAConfettiView) mention anything about changing the value of the intensity? Does your slider have a value property you could use to get the current value?
   * *Hint*: If the slider is moved while the confetti is falling, will the new intensity value be reflected? What functions of `SAConfettiView` might help with this?
 
  ### 6. Define your segmented control IBAction function
