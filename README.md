@@ -11,7 +11,7 @@
 ## Instructions
 
 ### 1. Add the [SAConfettiView](https://cocoapods.org/pods/SAConfettiView) pod
-1. Navigate to your project folder in Terminal and enter `pod init` (This will create an empty Podfile in your project folder)
+1. Navigate to your project folder in Terminal and enter `pod init`. This will create an empty Podfile in your project folder.
 2. Open your Podfile. It should look similar to this:
  ```
 # Uncomment this line to define a global platform for your project
@@ -19,7 +19,7 @@
 
 target 'ItsRainingConfetti' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks! // necessary for Swift
+  use_frameworks!
 
   # Pods for ItsRainingConfetti
 
