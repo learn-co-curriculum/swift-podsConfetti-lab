@@ -50,7 +50,6 @@
 			children = (
 				5DA6305D1D22EF790069DC38 /* ItsRainingConfetti */,
 				5DA6305C1D22EF790069DC38 /* Products */,
-				F6B85A92E5097212DCAB68F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,13 +70,6 @@
 				5D623EB71D256B51006B45B9 /* Supporting Files */,
 			);
 			path = ItsRainingConfetti;
-			sourceTree = "<group>";
-		};
-		F6B85A92E5097212DCAB68F1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
