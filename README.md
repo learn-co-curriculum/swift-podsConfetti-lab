@@ -92,4 +92,4 @@ end
   * *Hint*: If the type is changed while the confetti is falling, will the new type be reflected? What functions of `SAConfettiView` might help with this?
 
 ### 7. Celebrate!
-  ![IBAction Settings](https://s3.amazonaws.com/learn-verified/raining-confetti-john-oliver.gif)
+   ![IBAction Settings](https://s3.amazonaws.com/learn-verified/raining-confetti-john-oliver.gif)
