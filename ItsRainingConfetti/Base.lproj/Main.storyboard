@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ItsRainingConfetti" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3X-nh-VF0">
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6Kj-Ed-9oL"/>
+                                    <constraint firstAttribute="height" constant="80" id="ksd-y4-D9Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="🎉"/>
+                                <connections>
+                                    <action selector="confettiButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ePV-GE-EZF"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RR7-G0-QUH">
+                                <rect key="frame" x="20" y="510" width="560" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-el-Yw7">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intensity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spH-Cw-cBQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-BJ-OBZ">
+                                                <rect key="frame" x="-2" y="30" width="274" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Doa-iW-VeU"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="confettiIntensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="g9h-YA-axO"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="oFr-BJ-OBZ" firstAttribute="width" secondItem="pFD-el-Yw7" secondAttribute="width" id="lCU-6N-zJk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Moz-wc-H59">
+                                        <rect key="frame" x="290" y="0.0" width="270" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDE-QN-NsK">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1I1-qC-18b">
+                                                <rect key="frame" x="0.0" y="30" width="270" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6aW-Xd-ygH"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="❪"/>
+                                                    <segment title="▲"/>
+                                                    <segment title="★"/>
+                                                    <segment title="◆"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="confettiTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="UFk-M9-zBg"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1I1-qC-18b" secondAttribute="trailing" id="THb-Y8-RCe"/>
+                                            <constraint firstItem="1I1-qC-18b" firstAttribute="leading" secondItem="Moz-wc-H59" secondAttribute="leading" id="Xzo-8E-n4Q"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="RH4-Mt-pbv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RR7-G0-QUH" secondAttribute="bottom" constant="20" id="33w-wT-ded"/>
+                            <constraint firstAttribute="trailing" secondItem="RR7-G0-QUH" secondAttribute="trailing" constant="20" id="7XW-fa-MsK"/>
+                            <constraint firstItem="RR7-G0-QUH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bGu-5N-3Wp"/>
+                            <constraint firstItem="Q3X-nh-VF0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qkk-GG-pgw"/>
+                            <constraint firstItem="Q3X-nh-VF0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r76-T4-6DT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confettiButton" destination="Q3X-nh-VF0" id="jfA-Bs-mOs"/>
+                        <outlet property="confettiIntensitySlider" destination="oFr-BJ-OBZ" id="Uxm-ah-6r5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
